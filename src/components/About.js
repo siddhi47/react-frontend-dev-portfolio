@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 import { Icon } from "@iconify/react";
-import angularIcon from "@iconify/icons-logos/angular-icon";
-import reactIcon from "@iconify/icons-logos/react";
-import vueIcon from "@iconify/icons-logos/vue";
+import pythonIcon from "@iconify/icons-logos/python";
+import cplusplusIcon from "@iconify/icons-logos/c-plusplus";
+import opencvIcon from "@iconify/icons-logos/opencv";
+import tensorflowIcon from "@iconify/icons-logos/tensorflow";
+import pytorchIcon from "@iconify/icons-logos/pytorch";
 
 class About extends Component {
+
   render() {
     if (this.props.sharedBasicInfo) {
       var profilepic = "images/" + this.props.sharedBasicInfo.image;
@@ -31,17 +34,27 @@ class About extends Component {
                     alt="Avatar placeholder"
                   />
                   <Icon
-                    icon={angularIcon}
+                    icon={pythonIcon}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                   <Icon
-                    icon={reactIcon}
+                    icon={tensorflowIcon}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                   <Icon
-                    icon={vueIcon}
+                    icon={opencvIcon}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
+
+                    <Icon
+                        icon={pytorchIcon}
+                        style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
+                    />
+        <Icon
+            icon={cplusplusIcon}
+            style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
+        />
+
                 </span>
               </div>
             </div>
